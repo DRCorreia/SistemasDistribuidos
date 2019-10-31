@@ -9,14 +9,14 @@ def atende (conn, cliente):
                 except:
                         print ("Erro na conexão com o cliente "+str(cliente))
                         break
-
-                if data.decode("utf-8")[0].lower() == 'v':
+                
+                if data.decode("utf-8").lower() == 'verão':
                         conn.send(str.encode("Outono","utf-8"))
-                if data.decode("utf-8")[0].lower() == 'o':
+                if data.decode("utf-8").lower() == 'outono':
                         conn.send(str.encode("Inverno","utf-8"))
-                if data.decode("utf-8")[0].lower() == 'i':
+                if data.decode("utf-8").lower() == 'inverno':
                         conn.send(str.encode("Primavera","utf-8"))
-                if data.decode("utf-8")[0].lower() == 'p':
+                if data.decode("utf-8").lower() == 'primavera':
                         conn.send(str.encode("Verao","utf-8"))
 
 
